@@ -1,16 +1,44 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .holder {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .holder div {
+        width: 100px;
+        height: 100px;
+      }
+      #box1 {
+        background-color: red;
+        order: 2;
+      }
 
-<html>
+      #box2 {
+        background-color: blue;
+        order: 3;
+      }
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+      #box3 {
+        background-color: green;
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="holder">
+      <div id="box1">1</div>
+      <div id="box2">2</div>
+      <div id="box3">3</div>
+    </div>
+  </body>
 </html>
